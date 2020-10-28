@@ -35,7 +35,7 @@ header {
     color: #ffffff;
     background-color: #0B111C; 
     width: 100%;
-    padding: 12px 0 12px 0;
+    padding: 10px 0 10px 0;
 }
 
 .ml-auto {
@@ -92,7 +92,7 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
     max-width: 990px;
-    margin: 0 auto;
+    margin: 40px auto 0px auto;
 }
 
 .banner__container {
@@ -230,7 +230,10 @@ span {
         background-size: contain;
         height: 350px;
     }
-    
+
+    .container {
+        margin: 0px auto;
+    }
     .content {
         margin-top: 40px;
         padding: 0px 0px 25px 0px;
@@ -241,7 +244,9 @@ span {
     header {
         background-size: 140px auto;
     }
-
+    .container {
+        margin: 0px auto;
+    }
     .banner__container {
         padding: 0 50px 0 50px;
     }
@@ -320,6 +325,9 @@ span {
         height: 350px;
         min-width: 375px;
     }
+    .container {
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width: 443px) {
@@ -336,11 +344,18 @@ span {
     .header__contact a {
      margin-bottom: 6px;
     }
+    .container {
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width: 539px) and (min-width: 375px)  {
     .header__contact a {
         font-size: 11px;
+    }
+
+    .container {
+        margin: 0 auto;
     }
 
     .hero__banner {
