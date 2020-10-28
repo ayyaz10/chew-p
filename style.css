@@ -15,7 +15,73 @@ header {
     background-position: center center;
     height: 120px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
+
+.header__contact {
+    margin-left: auto;
+    margin-right: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #ffffff;
+    background-color: #0B111C; 
+    width: 100%;
+    padding: 15px 0 15px 0;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.header__mail::before {
+    content: '';
+    display: inline-block;
+    background-image: url("images/email.png");
+    background-repeat: no-repeat;
+    background-size: 36%;
+    background-position: center center;
+    width: 40px;
+    height: 11px;
+}
+
+.header__phone {
+    margin-right: 15px;
+}
+
+.header__phone::before {
+    content: '';
+    display: inline-block;
+    background-image: url("images/phone.png");
+    background-repeat: no-repeat;
+    background-size: 36%;
+    background-position: center center;
+    width: 40px;
+    height: 13px;
+}
+
+
+a:visited {
+    color: #ffffff;
+}
+
+a {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #74b1dd;
+}
+
 
 .outer__container {
     background-color: #0b111c;
@@ -25,10 +91,22 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1090px;
+    max-width: 990px;
     margin: 0 auto;
 }
 
+.banner__container {
+    padding-top: 80px;
+}
+
+.hero__banner {
+    background-image: url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 390px;
+    width: 100%;
+}
 
 .product__image {
     margin-right: 20px;
@@ -37,13 +115,6 @@ header {
             flex: 1;
     padding: 0 0 50px 50px;
     margin-top: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
 }
 
 .product {
@@ -57,12 +128,9 @@ header {
 }
 
 .content {
-    margin-top: 40px;
-    background-color: #08263B;
-    background-color: #171717;
     background-color: #0b111c;
     color: #fff;
-    padding: 50px 0px 25px 0px;
+    padding: 0px 0px 25px 0px;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -70,7 +138,7 @@ header {
 
 .main__content {
     max-width: 80%;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .content h1 {
@@ -101,7 +169,7 @@ header {
 }
 
 .contact {
-    margin-top: 50px;
+    margin-top: 20px;
     letter-spacing: 0.6px;
     font-size: 18px;
     font-weight: 700;
@@ -125,6 +193,12 @@ span {
     line-height: 1;
 }
 
+.contact__info a{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
 .email::before {
     content: '';
     display: inline-block;
@@ -145,13 +219,36 @@ span {
     background-position: center center;
     width: 40px;
     height: 18px;
-    margin-top: 8px;
 }
 
+
 /* responsive style section */
+
+@media only screen and (max-width: 990px) {
+    .hero__banner {
+        padding: 120px 0px 0px 0px;
+        background-size: contain;
+        height: 350px;
+    }
+    
+    .content {
+        margin-top: 40px;
+        padding: 0px 0px 25px 0px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     header {
         background-size: 140px auto;
+    }
+
+    .banner__container {
+        padding: 0 50px 0 50px;
+    }
+
+    .hero__banner {
+        background-size: contain;
+        height: 370px;
     }
 
     .container {
@@ -163,8 +260,8 @@ span {
     }
     .content {
         margin-top: 0;
+        padding: 0px 0px 25px 0px;
     }
-
     .content h1 {
         font-size: 22px;
     }
@@ -205,4 +302,58 @@ span {
         width: 90%;
         height: auto;
     }
+
 }
+
+@media only screen and (min-width: 1230px) {
+    .hero__banner {
+        background-size: contain;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .hero__banner {
+        padding: 30px 0 0 0;
+        background-size: contain;
+        height: 350px;
+        min-width: 375px;
+    }
+}
+
+@media only screen and (max-width: 443px) {
+
+    .header__contact {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    
+    .ml-auto {
+        margin-left: 0px;
+    }
+
+    .header__contact a {
+     margin-bottom: 6px;
+    }
+}
+
+@media only screen and (max-width: 539px) and (min-width: 375px)  {
+    .header__contact a {
+        font-size: 11px;
+    }
+
+    .hero__banner {
+        padding-top: 20px;
+        background-size: contain;
+        height: 350px;
+    }
+
+    .content {
+        margin-top: 0px;
+        padding: 0px 0px 25px 0px;
+    }
+}
+
+    
+
