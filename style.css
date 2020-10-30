@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-html, body {
-    /* height: 100%; */
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -86,8 +82,6 @@ a:hover {
     color: #74b1dd;
 }
 
-
-
 .banner__container {
     height: 500px;
 }
@@ -103,7 +97,7 @@ a:hover {
 
 .outer__container {
     background-color: #0b111c;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .container {
@@ -114,12 +108,6 @@ a:hover {
     margin: 0px auto 0px auto;
 }
 
-/* .banner__container {
-    padding-top: 30px;
-} */
-
-
-
 .product__image {
     margin-right: 20px;
     -webkit-box-flex: 1;
@@ -127,7 +115,6 @@ a:hover {
             flex: 1;
     padding: 0 0 50px 50px;
     align-self: center;
-    /* margin-top: 95px; */
 }
 
 .product {
@@ -153,6 +140,7 @@ a:hover {
     max-width: 80%;
     margin: 0px auto;
 }
+
 
 .content h1 {
     font-size: 26px;
@@ -205,6 +193,7 @@ a:hover {
 span {
     line-height: 1;
 }
+
 .contact__info a, .on__desktop .email, .on__desktop .phone {
     display: block;
 }
@@ -267,11 +256,6 @@ span {
 
 /* for table and mobile sizes */
 @media only screen and (max-width: 990px) {
-    /* .hero__banner {
-        padding: 120px 0px 0px 0px;
-        background-size: contain;
-        height: 350px;
-    } */
     .outer__container {
         padding-top: 1px;
     }
@@ -281,11 +265,10 @@ span {
     }
 
     .container {
-        margin: 55px auto;
+        margin: 55px auto 0 auto;
     }
 
     .content {
-        /* margin-top: 40px; */
         padding: 0px 0px 25px 0px;
     }
 }
@@ -299,22 +282,15 @@ span {
     }
 
     .banner__container {
-        /* padding: 20px 50px 0 50px; */
         height: 300px;
     }
-
-    /* .hero__banner {
-        background-size: contain;
-        height: 370px;
-    } */
-
  
     .container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
             -ms-flex-direction: column-reverse;
                 flex-direction: column-reverse;
-                margin: 36px auto;
+                margin: 36px auto 0 auto;
     }
     .content {
         margin-top: 0;
@@ -403,17 +379,6 @@ span {
     .header__contact a {
         font-size: 11px;
     }
-
-    
-    /* .banner__container {
-        height: 250px;
-    } */
-
-    /* .hero__banner {
-        background-size: contain;
-        height: 224px;
-        background-position: center center;
-    } */
 
     .content {
         margin-top: 0px;
