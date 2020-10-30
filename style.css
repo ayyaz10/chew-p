@@ -114,7 +114,8 @@ a:hover {
         -ms-flex: 1;
             flex: 1;
     padding: 0 0 50px 50px;
-    margin-top: 40px;
+    align-self: center;
+    /* margin-top: 95px; */
 }
 
 .product {
@@ -138,7 +139,7 @@ a:hover {
 
 .main__content {
     max-width: 80%;
-    margin: 30px auto;
+    margin: 0px auto;
 }
 
 .content h1 {
@@ -204,6 +205,8 @@ span {
     display: inline-block;
 }
 
+
+/* to display unclickable email and phone link, display block for on__desktop and display none for on__mobile */
 .on__desktop {
     display: block;
 }
@@ -250,10 +253,11 @@ span {
     }
 
     .container {
-        margin: 0px auto;
+        margin: 55px auto;
     }
+
     .content {
-        margin-top: 40px;
+        /* margin-top: 40px; */
         padding: 0px 0px 25px 0px;
     }
 }
@@ -265,11 +269,9 @@ span {
     .main__container {
         min-width: 375px;
     }
-    .container {
-        margin: 0px auto;
-    }
+
     .banner__container {
-        padding: 0 50px 0 50px;
+        padding: 20px 50px 0 50px;
     }
 
     .hero__banner {
@@ -282,6 +284,7 @@ span {
         -webkit-box-direction: reverse;
             -ms-flex-direction: column-reverse;
                 flex-direction: column-reverse;
+                margin: 36px auto;
     }
     .content {
         margin-top: 0;
@@ -328,6 +331,7 @@ span {
         height: auto;
     }
 
+/* to display clickable email and phone link, display block for on__mobile and display none for on__desktop */
     .on__desktop {
         display: none;
     }
@@ -353,9 +357,6 @@ span {
         height: 350px;
         /* min-width: 375px; */
     }
-    .container {
-        margin: 0 auto;
-    }
 }
 
 @media only screen and (max-width: 443px) {
@@ -372,9 +373,6 @@ span {
     .header__contact a {
      margin-bottom: 6px;
     }
-    .container {
-        margin: 0 auto;
-    }
 }
 
 @media only screen and (max-width: 539px) and (min-width: 375px)  {
@@ -382,14 +380,10 @@ span {
         font-size: 11px;
     }
 
-    .container {
-        margin: 0 auto;
-    }
-
     .hero__banner {
-        padding-top: 20px;
         background-size: contain;
-        height: 350px;
+        height: 224px;
+        background-position: center center;
     }
 
     .content {
