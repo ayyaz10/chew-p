@@ -82,7 +82,6 @@ a:hover {
     color: #74b1dd;
 }
 
-
 .outer__container {
     background-color: #0b111c;
 }
@@ -193,7 +192,7 @@ a:hover {
 span {
     line-height: 1;
 }
-.contact__info a{
+.contact__info a, .on__desktop .email, .on__desktop .phone {
     display: block;
 }
 .contact__info a, .contact__info span {
@@ -216,6 +215,7 @@ span {
 }
 
 .manager__name {
+    display: inline-block;
     margin-left: 10px;
     color: #74b1dd;
 }
