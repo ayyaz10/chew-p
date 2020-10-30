@@ -193,10 +193,28 @@ span {
     line-height: 1;
 }
 
-.contact__info a{
+.contact__info a {
     display: block;
     font-size: 14px;
     margin-bottom: 6px;
+}
+
+.contact__info .phone {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.on__desktop {
+    display: block;
+}
+
+.on__mobile {
+    display: none;
+}
+
+.manager__name {
+    margin-left: 10px;
+    color: #74b1dd;
 }
 
 .email::before {
@@ -244,6 +262,9 @@ span {
     header {
         background-size: 140px auto;
     }
+    .main__container {
+        min-width: 375px;
+    }
     .container {
         margin: 0px auto;
     }
@@ -261,7 +282,6 @@ span {
         -webkit-box-direction: reverse;
             -ms-flex-direction: column-reverse;
                 flex-direction: column-reverse;
-        min-width: 375px;
     }
     .content {
         margin-top: 0;
@@ -306,6 +326,14 @@ span {
     .banner {
         width: 90%;
         height: auto;
+    }
+
+    .on__desktop {
+        display: none;
+    }
+
+    .on__mobile {
+        display: block;
     }
 
 }
@@ -362,15 +390,11 @@ span {
         padding-top: 20px;
         background-size: contain;
         height: 350px;
-
     }
 
     .content {
         margin-top: 0px;
-        min-width: 375px;
+        min-width: 375px;   
         padding: 0px 0px 25px 0px;
     }
 }
-
-    
-
