@@ -95,23 +95,11 @@ a:hover {
     background-image: url("images/banner.png");
     /* Full height */
     height: 100%; 
-    /* width: 100;   */
-/* Center and scale the image nicely */
-    background-position: center;
+
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* .hero__banner {
-    background-image: url("images/banner.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    background-position: center;
-    height: 100%;
-    height: 390px;
-    width: 100%;
-} */
 
 .outer__container {
     background-color: #0b111c;
@@ -270,6 +258,14 @@ span {
 
 /* responsive style section */
 
+/* for big screen sizes */
+@media only screen and (min-width: 1440px) {
+    .banner__container {
+        height: 700px;
+    }
+}
+
+/* for table and mobile sizes */
 @media only screen and (max-width: 990px) {
     /* .hero__banner {
         padding: 120px 0px 0px 0px;
@@ -278,6 +274,10 @@ span {
     } */
     .outer__container {
         padding-top: 1px;
+    }
+
+    .banner__container {
+        height: 420px;
     }
 
     .container {
@@ -300,7 +300,7 @@ span {
 
     .banner__container {
         /* padding: 20px 50px 0 50px; */
-        height: 400px;
+        height: 300px;
     }
 
     /* .hero__banner {
@@ -372,23 +372,10 @@ span {
 
 }
 
-@media only screen and (min-width: 1440px) {
-    .banner__container {
-        height: 700px;
-    }
-    .hero__banner {
-        /* background-size: cover; */
-    }
-}
-
 @media only screen and (max-width: 640px) {
-/* 
-    .hero__banner {
-        padding: 30px 0 0 0;
-        background-size: contain;
-        height: 350px;
-        min-width: 375px;
-    } */
+    .banner__container {
+        height: 240px;
+    }
 }
 
 @media only screen and (max-width: 443px) {
@@ -405,6 +392,11 @@ span {
     .header__contact a {
      margin-bottom: 6px;
     }
+
+    .banner__container {
+        height: 210px;
+    }
+
 }
 
 @media only screen and (max-width: 539px) and (min-width: 375px)  {
@@ -413,9 +405,9 @@ span {
     }
 
     
-    .banner__container {
+    /* .banner__container {
         height: 250px;
-    }
+    } */
 
     /* .hero__banner {
         background-size: contain;
