@@ -192,9 +192,10 @@ a:hover {
 span {
     line-height: 1;
 }
-
-.contact__info a {
+.contact__info a{
     display: block;
+}
+.contact__info a, .contact__info span {
     font-size: 14px;
     margin-bottom: 6px;
 }
