@@ -15,57 +15,12 @@ header {
     background-position: center center;
     height: 120px;
     width: 100%;
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-}
-
-.header__contact {
-    margin-left: auto;
-    margin-right: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #ffffff;
-    background-color: #0B111C; 
-    width: 100%;
-    padding: 10px 0 10px 0;
-}
-
-.ml-auto {
-    margin-left: auto;
-}
-
-.header__mail::before {
-    content: '';
-    display: inline-block;
-    background-image: url("images/email.png");
-    background-repeat: no-repeat;
-    background-size: 36%;
-    background-position: center center;
-    width: 40px;
-    height: 11px;
-}
-
-.header__phone {
-    margin-right: 15px;
-}
-
-.header__phone::before {
-    content: '';
-    display: inline-block;
-    background-image: url("images/phone.png");
-    background-repeat: no-repeat;
-    background-size: 36%;
-    background-position: center center;
-    width: 40px;
-    height: 13px;
+            align-items: center; */
 }
 
 
@@ -86,10 +41,8 @@ a:hover {
     height: 500px;
 }
 .hero__banner {
-    background-image: url("images/banner.png");
-    /* Full height */
+    background-image: url("images/banner.jpg");
     height: 100%; 
-
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,7 +50,7 @@ a:hover {
 
 .outer__container {
     background-color: #0b111c;
-    padding-top: 50px;
+    padding: 50px 0 60px 0;
 }
 
 .container {
@@ -274,8 +227,14 @@ span {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .outer__container {
+        padding-bottom: 40px;
+    }
+
     header {
-        background-size: 140px auto;
+        background-size: 120px auto;
+        height: 100px;
     }
     .main__container {
         min-width: 375px;
@@ -349,6 +308,11 @@ span {
 }
 
 @media only screen and (max-width: 640px) {
+    header {
+        background-size: 100px auto;
+        height: 80px;
+    }
+
     .banner__container {
         height: 240px;
     }
